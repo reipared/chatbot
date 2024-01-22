@@ -1,10 +1,10 @@
-@import url("https: //fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap");
 
 body {
   background: #E8EBF5;
   padding: 0;
   margin: 0;
-  font-family: "Raleway";
+  font-family: Raleway;
 }
 
 .chat-box {
@@ -14,7 +14,6 @@ body {
   margin: 0 auto;
   overflow: hidden;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -139,7 +138,7 @@ body {
     & input {
       padding: 10px;
       border: none;
-      -webkit-appearance: none;
+      appearance: none;
       border-radius: 50px;
       background: whitesmoke;
       margin: 10px;
@@ -165,7 +164,7 @@ body {
 
 .chat-button {
   padding: 25px 16px;
-  background: #2c50ef;
+  background: #2C50EF;
   width: 120px;
   position: absolute;
   bottom: 0;
@@ -176,6 +175,7 @@ body {
   border-bottom-left-radius: 25px;
   box-shadow: 0 2px 15px rgba(#2c50ef, 0.21);
   cursor: pointer;
+
   & span {
     &::before {
       content: "";
@@ -186,13 +186,14 @@ body {
       transform: translate(0, -7px);
       border-radius: 15px;
     }
+
     &::after {
       content: "Message Us";
       font-size: 14px;
       color: white;
       position: absolute;
       left: 50px;
-      right: 18px;
+      top: 18px;
     }
   }
 }
@@ -223,13 +224,12 @@ body {
 
 .modal-close-button {
   float: right;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 1rem 1.5rem;
-  width: 24rem;
-  border-radius: 0.5rem;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
 }
 
 .close-button:hover {
@@ -239,13 +239,13 @@ body {
 .show-modal {
   opacity: 1;
   visibility: visible;
-  transform: scale(1.0);
+  transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
   z-index: 30;
 }
 
-@media screen only and(max-width: 450px) {
+@media screen and (max-width: 450px) {
   .chat-box {
-    min-width: 100% important;
+    min-width: 100% !important;
   }
 }

@@ -14,11 +14,9 @@ $(".chat-box .chat-box-header p").on("click", function () {
 		visibility: "hidden",
 	});
 });
-
 $("#addExtra").on("click", function () {
 	$(".modal").toggleClass("show-modal");
 });
-
 $(".modal-close-button").on("click", function () {
 	$(".modal").toggleClass("show-modal");
 });
